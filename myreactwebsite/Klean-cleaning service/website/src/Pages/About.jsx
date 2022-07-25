@@ -5,7 +5,7 @@ function About() {
     
 
 <div>
-  {/* About Start */}
+  
   <div className="container-fluid py-5 mb-5">
     <div className="container">
       <div className="row">
