@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="card & card slider.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+
+
+	
+</head>	
+<body>
+<h1 class="bg-info text-white text-center p-2 fixed-top">Bootstrap 4 Carousel Cards</h1>
+
+<main class="content" role="content">
+	
+	<section class="container-fluid" id="section1">
+
+	<div class="container m-2">
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="btn btn-outline-secondary prev" href="" title="go back" data-target="Previous Slide"><i class="fa fa-lg fa-chevron-left"></i></a>
+                <a class="btn btn-outline-secondary next" href="" title="more" data-target="Next Slide"><i class="fa fa-lg fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="carousel slide" data-ride="carousel" id="postsCarousel">
+        <div class="row row-equal carousel-inner">
+            <div class="carousel-item active">
+                <div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/460/?random" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/461/?random" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/462/?random" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/460/?random" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/461/?random" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+
+</main> 
+<div class="alerts-container">
+	
+	<div class="row">
+		<div id="timed-alert" class="alert alert-info animated tada" role="alert">
+			<span id="time"></span>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div id="click-alert" class="alert alert-warning" role="alert">
+		</div>
+	</div>
+	
+</div>
+<script>
+$(document).ready(function() {	
+	
+	
+	function randomAlert() {
+		var min = 5,
+			max = 20;
+		var rand = Math.floor(Math.random() * (max - min + 1) + min); 
+		
+		$("#time").html('Next alert in ' + rand + ' seconds');
+		$('#timed-alert').fadeIn(500).delay(3000).fadeOut(500);
+		setTimeout(randomAlert, rand * 1000);
+	};
+	randomAlert();
+});
+
+
+$('.btn').click(function(event) {
+    event.preventDefault();
+    var target = $(this).data('target');
+
+	$('#click-alert').html('data-target= ' + target).fadeIn(50).delay(3000).fadeOut(1000);
+	
+});
+
+
+
+(function($) {
+    "use strict";
+
+
+    $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+    $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+    
+
+    $('.carousel .carousel-item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      }
+      else {
+      	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+    
+})(jQuery);
+
+
+</script>
+</body>
+</html>

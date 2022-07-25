@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>new1</title>
+		<link rel="icon" href="images/logo.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="new 1.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="jquery.bxslider.css">
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="jquery.bxslider.js"></script>
+		
+		
+		
+</head>
+<body>
+	
+<section>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 text-center p-5">
+	<form>
+	<div class="col-12 col-sm-12 col-md-12 text-center">
+    <input type="radio" name="1" value="24" onClick=" result(), image('a1');" checked>single room
+	<input type="radio" name="1" value="8" onClick=" result(), image('a2');"> double room
+	<input type="radio" name="1" value="2" onClick="result(), image('a3');"> twin room
+	</div>
+    
+  </form>
+<form>
+ 
+</br>
+</form>
+  <img id="a" src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-02-22/b1.jpg" width="720" height="340" alt="">			
+  
+  
+  <script>
+  
+  
+
+a1 = new Image();
+a1.src =
+   "https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-02-22/b1.jpg";
+a2 = new Image();
+a2.src =
+   "https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-02-22/g.jpg";
+a3 = new Image();
+a3.src = "https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-16/04.jpg";
+
+function image(image) {
+  document.getElementById("a").src = eval(image + ".src");
+}
+
+function result() {
+  
+  var value = $("input[name=1]:checked").val();
+
+  
+
+  
+}
+window.onload = result;
+</script>
+</body>
+</html>

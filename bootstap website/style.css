@@ -1,0 +1,238 @@
+*{
+margin:0;
+padding:0;
+}
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+}
+
+#nav-bar{
+	 position:sticky;
+	 top:0;
+	 z-index:10;
+	
+}
+.navbar{
+	background-color:white;
+
+}
+.navbar-brand img{
+	height:60px;
+	margin:0;
+	padding-bottom:7%; 
+	
+}
+.navbar-nav li{
+	padding:10px 15px;	
+	font-size:15px;
+	font-weight:800;
+}
+.navbar-nav li a{
+	color:black !important;
+
+}
+.navbar-nav nav-item a{
+	
+}
+.text{
+	border:1px red solid;
+	font-size:30px;
+	font-weight:600;
+	padding:20px 10px 20px 40px;
+	
+	
+}
+.radio-inline{
+	margin-left:15%;
+	padding:5%;
+    font-size:15px;
+	font-weight:800px;
+}
+.tz-gallery .lightbox1 img,
+.tz-gallery .lightbox3 img,
+.tz-gallery .lightbox6 img,
+.tz-gallery .lightbox7 img,
+.tz-gallery .lightbox8 img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+	
+}
+
+
+.tz-gallery .lightbox1:before,
+.tz-gallery .lightbox3:before,
+.tz-gallery .lightbox6:before,
+.tz-gallery .lightbox7:before,
+.tz-gallery .lightbox8:before {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: 'twinroom';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox1:after,
+.tz-gallery .lightbox3:after,
+.tz-gallery .lightbox6:after,
+.tz-gallery .lightbox7:after,
+.tz-gallery .lightbox8:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox1:hover:after,
+.tz-gallery .lightbox1:hover:before,
+.tz-gallery .lightbox3:hover:after,
+.tz-gallery .lightbox3:hover:before,
+.tz-gallery .lightbox6:hover:after,
+.tz-gallery .lightbox6:hover:before,
+.tz-gallery .lightbox7:hover:after,
+.tz-gallery .lightbox7:hover:before,
+.tz-gallery .lightbox8:hover:after,
+.tz-gallery .lightbox8:hover:before{
+
+    opacity: 1;
+}
+
+.tz-gallery .lightbox2 img,
+.tz-gallery .lightbox4 img,
+.tz-gallery .lightbox12 img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+	
+}
+
+
+.tz-gallery .lightbox2:before,
+.tz-gallery .lightbox4:before,
+.tz-gallery .lightbox12:before {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: 'Single Room';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox2:after,
+.tz-gallery .lightbox4:after,
+.tz-gallery .lightbox12:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox2:hover:after,
+.tz-gallery .lightbox2:hover:before,
+.tz-gallery .lightbox4:hover:after,
+.tz-gallery .lightbox4:hover:before,
+.tz-gallery .lightbox12:hover:after,
+.tz-gallery .lightbox12:hover:before {
+
+    opacity: 1;
+}
+
+.tz-gallery .lightbox5 img,
+.tz-gallery .lightbox9 img,
+.tz-gallery .lightbox10 img,
+.tz-gallery .lightbox11 img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+	
+}
+
+
+.tz-gallery .lightbox5:before,
+.tz-gallery .lightbox9:before,
+.tz-gallery .lightbox10:before,
+.tz-gallery .lightbox11:before {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: 'Deluxe Double Room';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox5:after,
+.tz-gallery .lightbox9:after,
+.tz-gallery .lightbox10:after,
+.tz-gallery .lightbox11:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox5:hover:after,
+.tz-gallery .lightbox5:hover:before,
+.tz-gallery .lightbox9:hover:after,
+.tz-gallery .lightbox9:hover:before,
+.tz-gallery .lightbox10:hover:after,
+.tz-gallery .lightbox10:hover:before,
+.tz-gallery .lightbox11:hover:after,
+.tz-gallery .lightbox11:hover:before {
+
+    opacity: 1;
+}
+.tz-gallery{
+	flex:33.3%;
+	width:auto;
+
+}
+.column{
+		padding:5%;
+}
+.column img{
+	width:100%;
+	height:100%;
+	padding:3%;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+<style>
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablet: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.header{
+color: black;
+background-color: red;
+text-align: center;
+padding: 2%;
+font-weight: 1000;
+font-size: 140%;}
+
+.navbar{
+overflow: hidden;
+background-color: green; 
+}
+
+.navbar a{
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar a:hover{
+background-color:black;
+color: red;
+}
+
+@media screen and (max-width: 600px){
+.navbar a{
+width:100%;}}
+
+
+.header2{
+color: black;
+background-image: url(images/whiteflower.jpg);
+background-color: green;
+background-size:100% 100%;  
+padding: 2%;
+text-align: center;
+font-size: 140%;
+}
+
+.sidebar{
+padding: 2%;
+background-color: grey;}
+
+.sidebar img{
+width:100%;
+border-radius:10px;}
+
+.mainbar{
+background-color:yellow;
+padding: 1%;}
+
+.mainbar img{
+width: 100%;
+height:100%;
+border-radius:100px;}
+
+.textbox{padding:1%;}
+
+.footer{
+padding: 1%;
+background-color: black;
+color:white;
+text-align: center;
+}
+.footer img{
+width: 100%;
+border-radius: 10px;
+padding:2%;
+margin: 1%;}
+
+
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="col-12 header">My Header
+	</div>
+  </div>
+   
+   <div class="navbar">
+      <a href="#">Link</a>
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+   </div>  
+  <div class="row">
+    <div class="col-12 header2">hello world!
+	    
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 sidebar">
+	    <h2>image1</h2>
+		<image src="images/nature.jpg">
+		<h2>image2</h2>
+		<image src="images/stone.jpg">
+		<h2>image3</h2>
+		<image src="images/whale.jpg">
+	</div>
+	  
+    <div class="col-9 mainbar">
+		<div class="row">
+		<div class="col-12">
+		    <h1>Tops</h1>
+		</div>	
+        </div>
+		
+		<div class="row">
+           <div class="col-4 textbox">
+	      <img src="images/whale.jpg">
+           </div>
+		   <div class="col-8 textbox">
+		   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	       </div>
+        </div>
+		<div class="row">
+		  <div class="col-8 textbox">
+		  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	      </div>
+		   <div class="col-4 textbox">
+		   <img src="images/nature.jpg">
+	       </div>
+        </div>
+		<div class="row">
+           <div class="col-4 textbox">
+	      <img src="images/stone.jpg">
+           </div>
+		   <div class="col-8 textbox">
+		   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	       </div>
+        </div>
+         
+	</div>
+    <div class=" row footer">
+	   <div class="col-3 blockpad">
+	   <img src="images/whale.jpg">     
+       </div>
+	   <div class="col-3 blockpad">
+	        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       </div>
+	   <div class="col-3 blockpad">
+	   <img src="images/stone.jpg">     
+       </div>
+	   <div class="col-3 blockpad">
+	        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       </div>
+    </div>	   
+</body>
+</html>

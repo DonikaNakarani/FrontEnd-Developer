@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XainHotel-HomePage</title>
+	<link rel="icon" href="images/logo.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="home page.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="jquery.bxslider.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.bxslider.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head>
+<body>
+<section>
+<nav class="navbar navbar-expand-md bg-light navbar-dark sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+		<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/2021-11-18/h.png" alt="logo">
+		</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon bg-dark"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">About Us</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Contact Us</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Gallery</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">My Profile</a>
+		</li>
+		</ul>
+		
+		<ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">SIGN IN</a>
+        </li>
+        <li class="nav-item bg-danger">
+			<a class="nav-link" href="#"><i class="fa fa-calendar" style="font-size:20px"></i> Book Now</a>
+		</li>
+		
+    </ul>
+	</div>
+	</div>
+</nav>
+</section>
+<section class="slider-section">
+	<div id="carousel" class="carousel slide">
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active" style="background-image: url('images/slider1.jpg');">
+				<div class="slider_content d-md-block">
+					<h2 class="blockquote-footer">BEYOND IMAGINABLE</h2>
+					<h1 class="display-1">Enjoy Your Vacation With Us</h1>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></li>
+				</div>
+			</div> 
+
+			<div class="carousel-item" style="background-image: url('images/slider2.jpg');">
+				<div class="slider_content d-md-block">
+					<h2 class="blockquote-footer">BEYOND IMAGINABLE</h2>
+					<h1 class="display-1">Enjoy Your Vacation With Us</h1>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></li>
+				</div>
+			</div> 
+
+			<div class="carousel-item" style="background-image: url('images/slider3.jpg');">
+				<div class="slider_content d-md-block">
+					<h2 class="blockquote-footer">BEYOND IMAGINABLE</h2>
+					<h1 class="display-1">Enjoy Your Vacation With Us</h1>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></li>
+				</div>
+			</div> 
+		</div> 
+
+		
+		<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only"></span>
+		</a></div>
+</section>	
+<section>
+	<div class="container">
+		<div class="bg-white border border-dark row search">
+			<div class="search-area col-sm-6 col-lg-3">
+				<label class="form-label">CHECK IN
+				<i class="fa fa-calendar" style="font-size:24px"></i></label>
+				<input type="date" id="cal" name="" class="form-control">
+			</div>
+				
+			<div class="search-area col-sm-6 col-lg-3">
+				<label  class="form-label">CHECK OUT	
+				<i class="fa fa-calendar" style="font-size:24px"></i></label>
+				<input type="date" id="cal" name="" class="form-control">
+			</div>	
+			
+			<div class="search-title col-sm-6 col-lg-3 mt-3 p-3">
+			ADULTS	<div class="inc-dec">
+						<input type="button" value="+" class="plus"/>
+						<input type="number" class="st" size="20px" value="0"/>
+						<input type="button" value="-" class="minus"/>
+				</div>	
+			<div class="search-title mt-5 mr-6">CHILDREN
+				<div class="inc-dec">	
+						<input type="button" value="+" class="add"/>
+						<input type="number" class="str" size="20px" value="0"/>
+						<input type="button" value="-" class="dec"/>
+				</div>		
+			</div>			
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="featurebox mt-5 bg-light">
+		<div class="row">
+		<div class="col-md-3 col-sm-12">
+			<div class="box">
+				<div class="img_box">
+					<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-11-18/p1.png" class="img-fluid">
+				</div>
+				<div>
+					<h1 class="display-4 mt-5">Save up to 10%</h1>
+					<p>Members get access to an exclusive discounts on Radissonblu.com. Not a member yet? Hurry Up!</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<div class="box">
+				<div class="img_box">
+				<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-01-12/t.png" class="img-fluid">
+				</div>
+				<h1 class="display-4 mt-5">Best Rate Guarantee</h1>
+				<p>If you find a lower online rate, we will match it and give you an additional 25% off on your stay.</p>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<div class="box">
+				<div class="img_box">
+				<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-01-12/w.png" class="img-fluid">
+				</div>
+				<h1 class="display-4 mt-5">Free Wi-Fi</h1>
+				<p>If you find a lower online rate, we will match it and give you an additional 25% off on your stay.</p>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<div class="box">
+				<div class="img_box">
+				<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-01-12/m.png" class="img-fluid">
+				</div>
+				<h1 class="display-4 mt-5">Enjoy Free Nights</h1>
+				<p>If you find a lower online rate, we will match it and give you an additional 25% off on your stay.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+			
+</section>
+<section>
+	<div class="container">
+	<div class="row mx-auto">
+		<div class="col-md-6 col-sm-12 mt-5 justify-content-center">
+			<div class="sidebar">
+			<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-11-18/a.jpg" class="img-fluid rounded">
+			</div>
+		</div>
+		<div class="sidebar col-md-6 col-sm-12 mt-5">
+			<div class="sidebar"><br><br>
+			<span class="badge-pill border border-danger text-danger">About</span>
+			<h3 class="display-4 mt-5 text-danger">Comfort are Perfectly Combined Here</h3>
+			<p>This charming private 19th-century mansion, which originally belonged to the family, has been completely renovated with care &amp; passion while respecting the spirit of place. Divo Hotel surrounded herself by a team of French artisans to create a sophisticated place in a refined.</p>
+			<button type="button" class="btn-lg btn-danger mt-3 rounded-pill active"><a href="#">We Provide</a></button>
+			</div>
+		</div>
+	</div>	
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row mx-auto">
+			<div class="section container rounded join-content box-shadow mb-5 shadow bg-danger mt-5">
+				<div class="text-center col-middle">
+					<h2 class="text-white mb-5">This charming private 19th century mansion, which originally </h2>
+					<a href="https://hotel.bdtask.com/xainhotelv2/user/login" class="btn btn-outline-light mr-3">Sign In</a>
+					<a href="https://hotel.bdtask.com/xainhotelv2/register" class="btn btn-light">Join Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+<div class="section-title text-center mb-5 col-middle bg-light pt-5">
+	<div class="container">
+		<h2 class="block-title fs-25 mb-2 font-weight-bold"> This Week's Top Offers</h2>
+        <div class="sub-title fs-18">
+            A resort is a self-contained destination that can provide for all of your travel needs in one location.
+		</div>
+		
+		<div class="row mx-auto">
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-02-01/s.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">Enjoy the eye catching and wonderful sunset comfortably from your room window.</a></h5>
+                </div>
+            </div>
+               
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="	https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/o1.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">Lorem Ipsum since the 1500 Usd offer</a></h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/o2.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">Credit card that's right for you. 200 usd</a></h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/o3.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">In some form, by injected humor</a></h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/o4.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">Many desktop publishing 50 USD</a></h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/o5.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">The point of using 400 USD</a></h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-02-22/b4.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">Printer simply dummy 500 USD
+</a></h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card border mb-4">
+                <a href="#" class="card-img position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2021-02-22/h2.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 weeklyoffer-title"><a href="#" class="text-dark">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>	
+</section>
+	
+<section>
+<div class="container">
+<div class="carousel-container mx-auto" data-flickity='{ "wrapAround": true }' >
+	
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card border mb-4">
+                <a href="#" class="card-img1 position-relative">
+                        <img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/0.jpg" class="img-fluid">
+                        <button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4"><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>
+        </div>
+	
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+        <div class="card border mb-4">
+            <a href="#" class="card-img1 position-relative">
+				<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/01.jpg" class="img-fluid">
+				<button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4"><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>
+        </div>
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+        <div class="card border mb-4">
+            <a href="#" class="card-img1 position-relative">
+			<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/02.jpg" class="img-fluid">
+			<button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4"><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>
+        </div>
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+        <div class="card border mb-4">
+            <a href="#" class="card-img1 position-relative">
+			<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/03.jpg" class="img-fluid">
+			<button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4"><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>	
+			</div>
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+        <div class="card border mb-4">
+            <a href="#" class="card-img1 position-relative">
+			<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/0.jpg" class="img-fluid">
+		<button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4"><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>	
+			</div>
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+        <div class="card border mb-4">
+            <a href="#" class="card-img1 position-relative">
+			<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/01.jpg" class="img-fluid">
+		<button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4"><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>	
+			</div>
+	<div class="col-lg-3 col-md-4 col-sm-6 ">
+        <div class="card border mb-4">
+            <a href="#" class="card-img1 position-relative">
+			<img src="https://hotel.bdtask.com/xainhotelv2/assets/img/banner/2019-06-15/02.jpg" class="img-fluid">
+		<button type="button" class="position-absolute btn btn-primary">Book Now</button>
+						<span class="badge-pill border bg-white text-dark position-absolute">About</span>
+						<h5 class="card-title mb-0 weeklyoffer-title1 position-absolute ml-4 "><a href="#" class="text-white">Lorem Ipsum is simply dummy 100 usd</a></h5>
+                </a>
+                
+            </div>		
+			</div>
+  
+</div>
+</div>
+</section>
+
+<section>
+<div class="py-5 bg-dark">
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="newslatter">
+                    <h3 class="text-center text-white">Get updates &amp; exclusive offers</h3>
+                    <p class="text-center text-white">Sign up to our newsletter to be the first to hear about<br class="d-none d-lg-block">new openings, offers and more.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" name="youremail" id="youremail" class="form-control border-0 rounded-0" placeholder="Enter email here..." aria-label="email address">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary rounded-0 border-0" type="button" id="button">Subscribe</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+	<footer class="main-footer py-5 border-top-muted bg-dark">
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-lg-3 col-xl-3 mb-5">
+                    <div class="footer">
+                        <div class="footer-logo mb-3">
+                            <a href="https://hotel.bdtask.com/xainhotelv2/"><img src="https://hotel.bdtask.com/xainhotelv2/assets/img/2021-11-18/F.png" alt="" class="img-fluid"></a>
+                        </div>
+						<span class="text-white">
+                        Plot-7, Road-02, Hotel Motel Zone, San Francisco Road, United States of America                        
+                        info@demo.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xl-7 offset-xl-1">
+                    <div class="row mx-auto">
+                        <div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0">
+                            <h3 class="link-title fs-18 mb-3 font-weight-600 position-relative text-white">Pages</h3>
+                                <ul class="footer-link list-unstyled">
+									<li class="mb-2"><a class="link d-block font-weight-500 text-white" href="hotel">Home</a></li>
+									<li class="mb-2"><a class="link d-block font-weight-500 text-white" href="about">About Us</a></li>
+									<li class="mb-2"><a class="link d-block font-weight-500 text-white" href="contact">Contact Us</a></li>
+									<li class="mb-2"><a class="link d-block font-weight-500 text-white" href="gallery">Gallery</a></li>
+									<li class="mb-2"><a class="link d-block font-weight-500 text-white" href="my-profile">My Profile</a></li>
+								</ul>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0">
+                            <h3 class="link-title fs-18 mb-3 font-weight-600 position-relative text-white">Social Link</h3>
+								<ul class="list-unstyled social-icon">
+									<li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-instagram" style="font-size:36px;color:white"></i> <span class="text-white">Instagram </span> </a></li>
+									<li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" style="font-size:36px;color:white"></i> <span class="text-white">Twitter</span> </a></li>
+									<li><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-dribbble" style="font-size:36px;color:white"></i> <span class="text-white">Dribbble</span> </a></li>
+									<li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook-square" style="font-size:36px;color:white"></i> <span class="text-white">Facebook</span> </a></li>
+								</ul>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+							<h3 class="link-title fs-18 mb-3 font-weight-600 position-relative text-white">Company Policy</h3>
+								<ul class="footer-link list-unstyled menu mb-0">
+									<li class="mb-2"><a class="link  text-white d-block font-weight-500" href="privacy">Privacy</a></li>
+									<li class="mb-2"><a class="link  text-white d-block font-weight-500" href="terms">Terms &amp; Conditions</a></li>
+								</ul>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<section>
+	<div class="sub-footer  border-top-muted bg-dark py-3">
+		<div class="container">
+            <div class="row justify-content-end align-items-center text-white">
+                <div class="col-md-6">
+                    <div class="copy">Powered by bdtask</div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled text-right mb-0">
+                        <li class="list-inline-item"><a href="https://hotel.bdtask.com/xainhotelv2/privacy" class="text-white">Privacy</a></li>
+                        <li class="list-inline-item"><a href="https://hotel.bdtask.com/xainhotelv2/terms" class="text-white">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			
+			<script>
+				
+				
+				var i;
+		    $(function(){
+			    $('.plus').click(function(){
+				   i=parseInt($('.st').val());
+				   i=i+1;
+				   $('.st').val(i);
+				})
+				$('.minus').click(function(){
+				   i=parseInt($('.st').val());
+				   i=i-1;
+				   if(i==-1){
+				    i=0; 
+					}
+				   $('.st').val(i);
+				})
+			})
+				
+				var i;
+		    $(function(){
+			    $('.add').click(function(){
+				   i=parseInt($('.str').val());
+				   i=i+1;
+				   $('.str').val(i);
+				})
+				$('.dec').click(function(){
+				   i=parseInt($('.str').val());
+				   i=i-1;
+				   if(i==-1){
+				    i=0; 
+					}
+				   $('.str').val(i);
+				})
+			})
+					
+			
+			
+	</script>
+</body>
+</html>

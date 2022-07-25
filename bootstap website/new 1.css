@@ -1,0 +1,71 @@
+@import url('pick a font');
+body {
+	/*font: normal 1em 'font';*/
+	background-color: #ecfab6;
+}
+
+main {
+	margin-top: 4.5em;
+}
+#section1 {
+	height: 45em;
+}
+
+
+
+/* Carousel cards */
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.row-equal.carousel-inner>.active, 
+.row-equal.carousel-inner>.next, 
+.row-equal.carousel-inner>.prev {
+    display: flex;
+}
+
+.row-equal.carousel-inner .next        { left:  33%; }
+.row-equal.carousel-inner .prev        { left: -33%; }
+
+.carousel,
+.carousel-inner,
+.carousel-inner > .item {
+    overflow: hidden;
+}
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+
+
+
+
+/* using a container causes multiple alerts to stack. */
+.alerts-container {
+	position: fixed;
+	top: 1em;
+	right: 2em;
+	z-index: 9999;
+}
+.alert {
+	position: relative;
+	min-width: 15em;
+	text-align: center;
+	display: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.2);
+}
+

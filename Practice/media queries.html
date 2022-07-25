@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+<style>
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.header{
+color: black;
+background-color: red;
+text-align: center;
+padding: 2%;
+font-weight: 1000;
+font-size: 140%;}
+
+.header2{
+color: white;
+background-color: green;
+background-size:100% 100%;  
+padding: 2%;
+text-align: center;
+font-size: 140%;
+}
+.sidebar{
+padding: 2%;
+background-color: grey;}
+
+.sidebar img{
+width:100%;
+border-radius:10px;}
+
+.mainbar{
+background-color:yellow;
+padding: 1%;}
+
+.mainbar img{
+width: 100%;
+height:100%;
+border-radius:100px;}
+
+.textbox{padding:1%;}
+
+
+
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="col-12 header">My Header
+	</div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 header2">hello world!
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 sidebar">
+	    <h2>image1</h2>
+		<image src="nature.jpg">
+		<h2>image2</h2>
+		<image src="./HTML/img1.jpg">
+		<h2>image3</h2>
+		<image src="nature.jpg">
+	</div>
+	  
+    <div class="col-9 mainbar">
+		<div class="row">
+		<div class="col-12">
+		    <h1>Tops</h1>
+		</div>	
+        </div>
+		
+		<div class="row">
+           <div class="col-4 textbox">
+	      <img src="nature.jpg">
+           </div>
+		   <div class="col-8 textbox">
+		   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	       </div>
+        </div>
+		<div class="row">
+		  <div class="col-8 textbox">
+		  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	      </div>
+		   <div class="col-4 textbox">
+		   <img src="nature.jpg">
+	       </div>
+        </div>
+		
+         <div>
+		 Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+
+		 </div>
+		 <div>
+		 Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		 </div>
+		 <div>
+		 Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		 </div>
+		 <div>
+		 Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		 </div>
+
+	</div>
+  
+  
+</body>
+</html>
