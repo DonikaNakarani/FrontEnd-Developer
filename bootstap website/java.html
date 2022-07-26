@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>new1</title>
+		<link rel="icon" href="images/logo.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="jquery.bxslider.css">
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="jquery.bxslider.js"></script>
+		
+		
+		
+</head>
+<body>
+
+
+  <form>
+    <input type="radio" name="1" value="24" onClick=" result(), image('a1');" checked>24 Bit
+    </br>
+    <input type="radio" name="1" value="8" onClick=" result(), image('a2');"> 8 Bit
+    </br>
+    <input type="radio" name="1" value="2" onClick="result(), image('a3');"> 2Bit
+  </form>
+<form>
+  Höhe: <input id="height" type="number" min="1" max="340" onchange="result()" onkeyup="if(this.value > 340) this.value = 340;">
+  </br>
+  Breite: <input id="width" type="number" min="1" max="720" onchange="result()" onkeyup="if(this.value > 720) this.value = 720;">
+  </br>
+</br>
+Ergebnis <span id="output">xx</span> MBis 
+</form>
+  <img id="a" src="https://images.wallpaperscraft.com/image/eclipse_moon_sun_121745_1280x720.jpg" width="720" height="340" alt="">
+  
+  
+  <script>
+</body>
+</html>
