@@ -1,13 +1,13 @@
 {
-  "homepage":"https://github.com/DonikaNakarani/FrontEnd-Developer/tree/master/myreactwebsite/CartWebsite",
+  "homepage": "https://github.com/DonikaNakarani/FrontEnd-Developer/tree/master/myreactwebsite/CartWebsite",
   "name": "addtocart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.5.1",
-    "@mui/material": "^5.5.1",
+    "@mui/material": "^5.9.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -20,6 +20,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
+    "swall": "^0.0.2",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -27,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {

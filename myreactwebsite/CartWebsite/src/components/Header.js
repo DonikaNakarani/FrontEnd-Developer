@@ -5,10 +5,11 @@ import Badge from '@mui/material/Badge';
 import Nav from 'react-bootstrap/Nav'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/esm/Table';
 import { DLT } from '../redux/actions/action';
+import Index from './Index';
 
 const Header = () => {
 
@@ -51,10 +52,11 @@ const Header = () => {
         <>
             <Navbar bg="dark" variant="dark" style={{ height: "60px" }}>
                 <Container>
-                    <NavLink to="/" className="text-decoration-none text-light mx-3">Add to Cart</NavLink>
+                  
                     <Nav className="me-auto">
-                        <NavLink to="/" className="text-decoration-none text-light">Home</NavLink>
+                        <NavLink to="/home" className="text-decoration-none text-light">Home</NavLink>
                     </Nav>
+                    <NavLink to="/login" ><button className="btn btn-outline-light me-3">Login</button></NavLink> 
 
                     <Badge badgeContent={getdata.length} color="primary"
                         id="basic-button"
@@ -64,11 +66,11 @@ const Header = () => {
                         onClick={handleClick}
                     >
                         <i class="fa-solid fa-cart-shopping text-light" style={{ fontSize: 25, cursor: "pointer" }}></i>
-                    </Badge>
-
+                    </Badge> 
+                    
                 </Container>
-
-
+                
+                   
                 <Menu
                     id="basic-menu"
                     anchorEl={anchorEl}
@@ -78,7 +80,7 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                     }}
                 >
-
+                    
                     {
                         getdata.length ? 
                         <div className='card_details' style={{width:"24rem",padding:10}}>
@@ -132,7 +134,9 @@ const Header = () => {
                     }
 
                 </Menu>
+                
             </Navbar>
+            <Index/>
         </>
     )
 }

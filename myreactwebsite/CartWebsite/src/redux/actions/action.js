@@ -21,3 +21,10 @@ export const REMOVE = (iteam) => {
         payload: iteam
     }
 }
+
+export const Login = (id) => {
+    return {
+        type: "Login",
+        payload:id
+    }
+}
