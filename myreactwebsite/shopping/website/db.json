@@ -1,0 +1,28 @@
+{
+    "users": [
+      {
+        "name": "Mehul Nakarani",
+        "username": "mehul",
+        "email": "m@gmail.com",
+        "phone": "89897989",
+        "website": "http://localhost:3000/users",
+        "id": 1
+      },
+      {
+        "name": "dony p",
+        "username": "donika  dp",
+        "email": "demo@gmail.com",
+        "phone": "68599403",
+        "website": "http://localhost:3000/users",
+        "id": 4
+      },
+      {
+        "name": "dddddd",
+        "username": "ddddd",
+        "email": "demo@gmail.com",
+        "phone": "34444",
+        "website": "http://localhost:3000/users",
+        "id": 5
+      }
+    ]
+  }
